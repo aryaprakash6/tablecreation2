@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display dept</h1>
+        <table border="5px">
+            <tr>
+                <th>Dept no</th>
+                <th>Dname</th>
+                <th>Loc</th>
+            </tr>
+            {% for do in dept %}
+                <tr>
+                    <td>{{do.Dept_no}}</td>
+                    <td>{{do.D_name}}</td>
+                    <td>{{do.Loc}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
